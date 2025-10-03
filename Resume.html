@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Projects</title>
+    <style>
+    :root{
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e6e9ef;
+    }
+
+    body{
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: var(--bg);
+      color: #0f172a;
+      margin: 0;
+      padding: 32px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container{
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1{
+      margin: 0 0 16px 0;
+      font-size: 24px;
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 6px 18px rgba(12, 16, 23, 0.04);
+    }
+
+    table{
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: auto;
+    }
+
+    thead th{
+      text-align: left;
+      font-size: 13px;
+      color: var(--muted);
+      padding: 12px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+    }
+
+    tbody td{
+      padding: 12px;
+      vertical-align: middle;
+      border-bottom: 1px solid #f1f3f7;
+      font-size: 15px;
+    }
+
+    tbody tr:hover{
+      background: #fbfdff;
+    }
+
+    .lang{
+      display: inline-block;
+      font-size: 12px;
+      padding: 6px 8px;
+      border-radius: 999px;
+      background: #f1f5f9;
+      color: #0f172a;
+    }
+
+    .desc{
+      color: #334155;
+      font-size: 14px;
+    }
+
+    .link-btn{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--accent);
+      border: 1px solid transparent;
+      padding: 6px 10px;
+      border-radius: 8px;
+    }
+
+    .link-btn svg{
+      width: 16px;
+      height: 16px;
+      display: block;
+    }
+
+    /* Responsive: on small screens, show rows as cards */
+    @media (max-width: 680px){
+      thead{ display: none; }
+      table, tbody, tr, td { display: block; width: 100%; }
+      tr { margin-bottom: 12px; border-radius: 10px; border: 1px solid var(--border); overflow: hidden; }
+      td { 
+        padding: 10px 12px;
+        border: none;
+      }
+      td + td { border-top: 1px solid var(--border); }
+      .row-header{
+        display:flex; justify-content:space-between; align-items:center;
+      }
+    }
+
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Project Repositories</h1>
+
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Project-Language</th>
+              <th>Repo-Link</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <div class="row-header">
+                  <strong>CSS</strong>
+                </div>
+              </td>
+              <td>
+                <a class="link-btn"
+                  href="https://github.com/Urvesh0069/CSS" target="_blank"
+                  rel="noopener">
+                  <span>View Repository</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="row-header">
+                  <strong>BOOTSTREP</strong>
+                </div>
+              </td>
+              <td>
+                <a class="link-btn"
+                  href="https://github.com/Urvesh0069/BT" target="_blank"
+                  rel="noopener">
+                  <span>View Repository</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="row-header">
+                  <strong>C</strong>
+                </div>
+              </td>
+              <td>
+                <a class="link-btn"
+                  href="https://github.com/Urvesh0069/c_langvge" target="_blank"
+                  rel="noopener">
+                  <span>View Repository</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="row-header">
+                  <strong>DSA With C++</strong>
+                </div>
+              </td>
+              <td>
+                <a class="link-btn"
+                  href="https://github.com/Urvesh0069/DSA" target="_blank"
+                  rel="noopener">
+                  <span>View Repository</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="row-header">
+                  <strong>JAVASCRIPT</strong>
+                </div>
+              </td>
+              <td>
+                <a class="link-btn"
+                  href="https://github.com/Urvesh0069/JS" target="_blank"
+                  rel="noopener">
+                  <span>View Repository</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="row-header">
+                  <strong>REACT JS</strong>
+                </div>
+              </td>
+              <td>
+                <a class="link-btn"
+                  href="https://github.com/Urvesh0069/Reactjs" target="_blank"
+                  rel="noopener">
+                  <span>View Repository</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="row-header">
+                  <strong>NODE JS</strong>
+                  <span class="lang">ONGOING</span>
+                </div>
+              </td>
+              <td>
+                <a class="link-btn"
+                  href="https://github.com/Urvesh0069/Node.js" target="_blank"
+                  rel="noopener">
+                  <span>View Repository</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
